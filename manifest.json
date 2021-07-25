@@ -2,18 +2,18 @@
   "name": "Copy Link to MD",
   "version": "1.0",
   "manifest_version": 3,
-  "description": "Build an Extension!",
+  "description": "copy the title of this page or the selected text with url in mark down style",
   "background": {
     "service_worker": "background.js"
   },
-  "action": {},
   "content_scripts": [
     {
+      "matches": ["<all_urls>"],
       "all_frames": true,
       "js": ["content-script.js"]
     }
   ],
-  "permissions": [ "activeTab", "contextMenus", "clipboardWrite" ],
+  "permissions": ["activeTab", "contextMenus", "clipboardWrite"],
   "icons": {
     "16": "/images/test1.png",
     "32": "/images/test1.png",
