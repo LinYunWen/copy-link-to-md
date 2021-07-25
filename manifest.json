@@ -1,0 +1,23 @@
+{
+  "name": "Copy Link to MD",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Build an Extension!",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {},
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "js": ["content-script.js"]
+    }
+  ],
+  "permissions": [ "activeTab", "contextMenus", "clipboardWrite" ],
+  "icons": {
+    "16": "/images/test1.png",
+    "32": "/images/test1.png",
+    "48": "/images/test1.png",
+    "128": "/images/test1.png"
+  }
+}
