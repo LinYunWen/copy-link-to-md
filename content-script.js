@@ -16,11 +16,11 @@ chrome.runtime.onMessage.addListener((request, sender) => {
 
 function copyToClipboard(data) {
   // https://stackoverflow.com/questions/3436102/copy-to-clipboard-in-chrome-extension
-  const copyEle = document.createElement('textarea');
+  const copyEle = document.createElement("textarea");
   copyEle.textContent = data;
   document.body.appendChild(copyEle);
   copyEle.select();
-  document.execCommand('copy');
+  document.execCommand("copy");
   document.body.removeChild(copyEle);
 }
 

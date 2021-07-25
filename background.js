@@ -1,5 +1,5 @@
-const COPY_TITLE = 'title';
-const COPY_SELECTION = 'selection';
+const COPY_TITLE = "title";
+const COPY_SELECTION = "selection";
 const items = [
   {
     id: COPY_TITLE,
